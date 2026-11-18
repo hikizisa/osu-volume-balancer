@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osu-volume-balancer"
+version = "1.0.0"
+description = "AI-free psychoacoustic hitsound volume balancer for osu!standard beatmaps"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "osu! hitsound community" }
+]
+dependencies = [
+    "numpy>=1.22.0",
+    "scipy>=1.9.0",
+    "soundfile>=0.12.0",
+]
+
+[project.scripts]
+osu-volume-balancer = "osu_volume_balancer:main"
